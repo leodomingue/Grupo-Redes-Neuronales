@@ -1,5 +1,7 @@
 #Se supone que no deberias estar aca pero bueno, si te entró la curiosidad o ves un error en el codigo y no sabes dodne esta
 
+import numpy as np
+
 def test_perceptron_1(train_func):
   """
   Test AND
