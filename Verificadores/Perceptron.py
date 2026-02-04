@@ -2,7 +2,7 @@
 
 import numpy as np
 
-def test_perceptron_1(train_func):
+def test_perceptron_1(train_perceptron):
   """
   Test AND
   """
