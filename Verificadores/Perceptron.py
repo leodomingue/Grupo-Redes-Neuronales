@@ -15,11 +15,11 @@ def test_perceptron_1(train_func):
     perceptron, history = train_perceptron(X, y, lr=0.1, epochs=20)
 
     #Get predictions
-    test_preds = [perceptron.predict(xi) for xi in X]
+    test_preds = np.array([perceptron.predict(xi) for xi in X])
 
     #Asserts
     assert len(history["errors"]) == 20, "El historial debe tener 20 épocas."
-    assert np.array_equal(test_results, y), f"Error: Se esperaba {y} pero se obtuvo {test_results}"
+    assert np.array_equal(test_preds, y), f"Error: Se esperaba {y} pero se obtuvo {test_preds}"
 
     print("Bien. El test ha pasado sin errores")
 
