@@ -39,7 +39,7 @@ def test_02_second_map(perceptron):
       print(f"Error calculando accuracy - {e}")
       return False
 
-def run_all_tests_exercise_1(first_perceptron, second_perceptron):
+def run_all_tests_exercise_2(first_perceptron, second_perceptron):
   print("EJECUTANDO TODOS LOS TESTS")
   results = []
 
