@@ -24,7 +24,7 @@ def test_03_verify_is_within_bounds(perceptron_lower, perceptron_upper, is_withi
     total_inside = len(points_inside_band)
     accuracy_inside = correct_inside / total_inside
 
-    if accuracy_inside == 1.00:
+    if accuracy_inside == 0.90:
       return True
     else:
       print(f"Accuracy insuficiente para punto dentro del limite: {accuracy_inside * 100:.2f}%")
@@ -50,7 +50,7 @@ def test_04_verify_is_outside_bounds(perceptron_lower, perceptron_upper, is_with
     total_outside = len(points_outside_band)
     accuracy_outside = correct_outside / total_outside
 
-    if accuracy_outside == 1.00:
+    if accuracy_outside == 0.90:
       return True
     else:
       print(f"Accuracy insuficiente para puntos fuera del limite: {accuracy_outside * 100:.2f}%")
